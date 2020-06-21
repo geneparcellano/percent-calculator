@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<title>Percent Calculator</title>
+			<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body>
+		<main class="page">
+			<div class="page-head">
+				<h1>Percent Calculator</h1>
+			</div>
+			<div class="calculator calculator-percent">
+				<form autocomplete="off" novalidate="novalidate">
+					<div class="form-group">
+						<span class="form-label" data-target="#part">Part</span>
+						<input type="text" class="form-control" name="part" id="part"
+							data-required="required"
+							data-type="number"
+							placeholder="3"
+							autofocus="autofocus"
+							autocomplete="off"
+						/>
+					</div>
+					<div class="form-group">
+						<span class="form-label" data-target="#whole">Whole</span>
+						<input type="text" class="form-control" name="whole" id="whole"
+							data-required="required"
+							data-type="number"
+							placeholder="6"
+							autocomplete="off"
+						/>
+					</div>
+					<div class="form-group">
+						<span class="form-label active" data-target="#percent"><span class="indicator">Solving for this <span class="indicator-arrow"></span></span>%</span>
+						<input type="text" class="form-control active" name="percent" id="percent"
+							data-required="required"
+							data-type="number"
+							disabled="disabled"
+							placeholder="50%"
+							autocomplete="off"
+						/>
+					</div>
+				</form>
+			</div>
+		</main>
+		<script src="assets/js/jquery-1.10.2.min.js"></script>
+		<script src="assets/js/parsley.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+
+		<script>
+			// Initialize Percent Calculator
+			percentCalculator.init();
+		</script>
+
+	</body>
+</html>
